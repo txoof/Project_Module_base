@@ -2,6 +2,16 @@
 
 Good base practices for creating modules and setting up a project
 
+# Structure of Modules
+Modules should be in their own directories within the project. Each module should have an `__init__.py` file to load the module contents.
+
+## __init__
+```
+from .fileName import *
+from . import math 
+```
+
+
 ## Logging
 Logging is handled by a root logger and child loggers that are attached to the root logger.
 
@@ -60,3 +70,8 @@ Example Output:
 
     [NbConvertApp] Converting notebook Readme.ipynb to markdown
 
+
+
+```python
+
+```
